@@ -7,8 +7,8 @@ async function main() {
   const CertVault = await ethers.getContractFactory("CertVault");
   const contract = await CertVault.deploy();
 
-  await contract.waitForDeployment(); // ethers v6 syntax
-  console.log("Contract deployed to:", contract.target); // Address here
+  await contract.waitForDeployment();
+  console.log("Contract deployed to:", contract.target);
 }
 
 main()
