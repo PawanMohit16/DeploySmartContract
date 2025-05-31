@@ -1,4 +1,4 @@
-# 🛡️ CertVault – Smart Certificate System using Hardhat & Ganache
+# 🔐 Cypher Smart Contract Deployment
 
 A simple yet powerful Ethereum smart contract project for issuing and verifying certificates, built with **Hardhat**, **Solidity**, and **Ganache**.
 
@@ -7,7 +7,7 @@ A simple yet powerful Ethereum smart contract project for issuing and verifying 
 ## 📁 Project Structure
 
 ```
-CertVault/
+Cypher/
 ├── contracts/
 │   └── CertVault.sol            # Solidity contract for certificate issuance and validation
 ├── scripts/
@@ -101,19 +101,19 @@ After deployment, you'll see the contract address printed in the console.
 
 You can interact with the contract using the Hardhat console, scripts, or your own front-end.
 
-- **Issue Certificate**
+### Issue Certificate
 
 ```solidity
 issueCertificate(string memory recipientName, string memory courseName, string memory ipfsHash)
 ```
 
-- **Validate Certificate**
+### Validate Certificate
 
 ```solidity
 validateCertificate(string memory ipfsHash) → returns bool
 ```
 
-- **Get Certificate Details**
+### Get Certificate Details
 
 ```solidity
 getCertificate(string memory ipfsHash) → returns (string memory recipientName, string memory courseName)
@@ -148,5 +148,16 @@ Pull requests, issues, and stars are always welcome!
 - 🧾 **Contract Logic** — See `contracts/CertVault.sol`
 - ⚙️ **Deployment Logic** — See `scripts/deploy.js`
 - 🌐 **Network Config** — See `hardhat.config.js`
+
+---
+
+## 📌 NOTE
+
+If you came here to get the deployed contract address for the **main Cypher app**,  
+just put the following in your `.env` file:
+
+```env
+VITE_CONTRACT_ADDRESS=your_deployed_contract_address_here
+```
 
 Happy building! 🎉
