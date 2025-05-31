@@ -97,7 +97,18 @@ After deployment, you'll see the contract address printed in the console.
 
 ---
 
-## 🧪 How to Use
+## 📌 NOTE
+
+If you came here to get the deployed contract address for the **main Cypher app**,  
+just put the following in your `.env` file:
+
+```env
+VITE_CONTRACT_ADDRESS=your_deployed_contract_address_here
+```
+
+---
+
+## 🧪 Optional Ways to Use
 
 You can interact with the contract using the Hardhat console, scripts, or your own front-end.
 
@@ -128,36 +139,10 @@ getCertificate(string memory ipfsHash) → returns (string memory recipientName,
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
-
----
-
-## 🙌 Contributions & Questions
-
-Pull requests, issues, and stars are always welcome!
-
-> Want to format your own `README.md` like a pro?  
-> Check out [GitHub's Markdown Guide](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
----
-
 ## 💡 For Developers
 
 - 🧾 **Contract Logic** — See `contracts/CertVault.sol`
 - ⚙️ **Deployment Logic** — See `scripts/deploy.js`
 - 🌐 **Network Config** — See `hardhat.config.js`
-
----
-
-## 📌 NOTE
-
-If you came here to get the deployed contract address for the **main Cypher app**,  
-just put the following in your `.env` file:
-
-```env
-VITE_CONTRACT_ADDRESS=your_deployed_contract_address_here
-```
 
 Happy building! 🎉
